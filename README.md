@@ -1,6 +1,6 @@
-# Point-of-Sale System
+# Point of Sale System
 
-This is a basic four-page Point-of-Sale system built with CodeIgniter 4.
+A CodeIgniter 4 Point-of-Sale system using MySQL database integration.
 
 ## Features
 
@@ -8,9 +8,10 @@ This is a basic four-page Point-of-Sale system built with CodeIgniter 4.
 - About page
 - Customer Accounts page
 - User Accounts page
-- Navigation links between all pages
-- Static PHP arrays for customer and user records
-- `foreach` loops for displaying records
+- MySQL database
+- CodeIgniter Models
+- Query Builder with `findAll()`
+- Navigation links between pages
 
 ## Routes
 
@@ -21,17 +22,9 @@ This is a basic four-page Point-of-Sale system built with CodeIgniter 4.
 | Customer Accounts | `/customers` |
 | User Accounts | `/users` |
 
-## Technologies
+## Database
 
-- PHP
-- CodeIgniter 4
-- Composer
-- HTML
-- XAMPP
+Database name:
 
-## Running the Project
-
-From the project folder, run:
-
-```bash
-C:\xampp\php\php.exe spark serve
+```text
+pos_system
