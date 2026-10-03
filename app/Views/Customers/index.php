@@ -3,6 +3,11 @@
 <head>
     <title>Customer Accounts</title>
 </head>
+
+<p>
+    <a href="<?= base_url('/customers/new') ?>">Add New Customer</a>
+</p>
+
 <body>
 
     <nav>
@@ -22,6 +27,7 @@
                 <th>Full Name</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Actions</th>
             </tr>
         </thead>
 
@@ -30,8 +36,16 @@
                 <tr>
                     <td><?= esc($customer['full_name']) ?></td>
                     <td><?= esc($customer['email']) ?></td>
-                    <td><?= esc($customer['phone']) ?></td>
+                    <td><?= esc($customer['phone']) ?></td> 
+                    
+
+                    <td>
+                    <a href="<?= base_url('/customers/edit/' . $customer['id']) ?>">
+                         Edit
+                    </a>
+                </td>
                 </tr>
+                
             <?php endforeach; ?>
         </tbody>
     </table>
