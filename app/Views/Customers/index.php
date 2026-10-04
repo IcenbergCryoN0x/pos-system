@@ -11,6 +11,7 @@
 <body>
 
     <nav>
+        <a href="<?= base_url('/logout') ?>">Logout</a>
         <a href="<?= base_url('/') ?>">Home</a> |
         <a href="<?= base_url('/about') ?>">About</a> |
         <a href="<?= base_url('/customers') ?>">Customer Accounts</a> |
